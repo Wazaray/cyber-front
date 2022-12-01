@@ -1,0 +1,35 @@
+[{
+    "id":998,
+    "isCrossroad":false,
+    "messageInfo":"C'est de début",
+    "question":"ici, la question si le isCrossroad=true",
+    "refSuivant":1,
+    "yesChoice":{"refSuivant":3,"risk":0.5},
+    "noChoice":{"refSuivant":5,"risk":-0.5}
+},{
+    "id":1,
+    "isCrossroad":true,
+    "messageInfo":"ici le message de l'info",
+    "question":"Si tu veux continuer, choisis oui ou non",
+    "refSuivant":0,
+    "yesChoice":{"refSuivant":2,"risk":0.5},
+    "noChoice":{"refSuivant":3,"risk":-0.5}
+},
+{
+    "id":2,
+    "isCrossroad":false,
+    "messageInfo":"tu as choisi oui",
+    "question":null,
+    "refSuivant":999,
+    "yesChoice":{"refSuivant":null,"risk":null},
+    "noChoice":{"refSuivant":null,"risk":null}
+},
+{
+    "id":3,
+    "isCrossroad":false,
+    "messageInfo":"tu as choisi non",
+    "question":null,
+    "refSuivant":999,
+    "yesChoice":{"refSuivant":null,"risk":null},
+    "noChoice":{"refSuivant":null,"risk":null}
+}]
