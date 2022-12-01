@@ -16,7 +16,9 @@ function Crossroad({ prop, setNextSlide }) {
           </button>
         </div>
         <div className="answer_no">
-          <button onClick={handleClick}>NON !</button>
+          <button value={prop.noChoice.refSuivant} onClick={handleClick}>
+            NON !
+          </button>
         </div>
       </div>
     </div>

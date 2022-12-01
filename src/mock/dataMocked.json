@@ -32,4 +32,13 @@
     "refSuivant":999,
     "yesChoice":{"refSuivant":null,"risk":null},
     "noChoice":{"refSuivant":null,"risk":null}
+},
+{
+    "id":999,
+    "isCrossroad":null,
+    "messageInfo":"C'est fini !!",
+    "question":null,
+    "refSuivant":null,
+    "yesChoice":{"refSuivant":null,"risk":null},
+    "noChoice":{"refSuivant":null,"risk":null}
 }]

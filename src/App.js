@@ -3,19 +3,18 @@ import React from 'react';
 import Header from './components/Header';
 import Screen from './components/Screen';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import data from './mock/dataMocked.json';
 //import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [slide, setSlide] = useState(1);
   const [screen, setScreen] = useState(
-    data.filter(screen => screen.id === 1)[0]
+    data.filter(screen => screen.id === 998)[0]
   );
 
   const setNewData = newSlide => {
-    setSlide(newSlide);
-    setScreen(data.filter(screen => screen.id === newSlide)[0]);
+    const newScreen = data.filter(screen => screen.id == newSlide)[0];
+    setScreen(newScreen);
   };
   return (
     <div className="App">
