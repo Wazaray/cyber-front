@@ -20,7 +20,6 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
           <span>Le vih c'est surfait, mais l'attraper c'est vite fait </span>
         </div>
       </div>
-
       <div className="crossroad__middle">
         <div className="header">
           <div className="header__logo">
@@ -31,57 +30,72 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
               alt="ruban_rouge"
             />
           </div>
-      <div className="question__content">
-        <div className="question__navbar">
-          <div className="question__navbar-reduce" />
-          <div
-            className="question__navbar-resize image-clignote"
-            onClick={handleClickBadScreen}
-          />
-          <div className="question__navbar-cross" />
-        </div>
 
-        <div className="straightroad__content">
           <div className="question__content">
             <div className="question__navbar">
               <div className="question__navbar-reduce" />
-              <div className="question__navbar-resize-pink" />
+              <div
+                className="question__navbar-resize image-clignote"
+                onClick={handleClickBadScreen}
+              />
               <div className="question__navbar-cross" />
             </div>
-            <div className="question__grid">
-              <div className="question__phrase">
-                <div className="question__phrase-content">{prop.question}</div>
+
+            <div className="straightroad__content">
+              <div className="question__content">
+                <div className="question__navbar">
+                  <div className="question__navbar-reduce" />
+                  <div className="question__navbar-resize-pink" />
+                  <div className="question__navbar-cross" />
+                </div>
+                <div className="question__grid">
+                  <div className="question__phrase">
+                    <div className="question__phrase-content">
+                      {prop.question}
+                    </div>
+                  </div>
+                  <div className="question__phrase-answer">
+                    <button
+                      className="crossroad__button"
+                      value={prop.yesChoice.refSuivant}
+                      onClick={handleClick}>
+                      {prop.yesChoice.btn1}
+                    </button>
+                    <button
+                      className="crossroad__button"
+                      value={prop.noChoice.refSuivant}
+                      onClick={handleClick}>
+                      {prop.noChoice.btn2}
+                    </button>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div className="footer">
+              <button
+                className="footer__button-pink"
+                onClick={handleClickReset}>
+                réinitialiser
+              </button>
               <div className="question__phrase-answer">
-                <button className="crossroad__button" value={prop.yesChoice.refSuivant} onClick={handleClick}>
+                <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
                   {prop.yesChoice.btn1}
                 </button>
-                <button className="crossroad__button" value={prop.noChoice.refSuivant} onClick={handleClick}>
+                <button value={prop.noChoice.refSuivant} onClick={handleClick}>
                   {prop.noChoice.btn2}
                 </button>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="footer">
-          <button className="footer__button-pink" onClick={handleClickReset}>
-            réinitialiser
-          </button>
-          <div className="question__phrase-answer">
-            <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
-              {prop.yesChoice.btn1}
-            </button>
-            <button value={prop.noChoice.refSuivant} onClick={handleClick}>
-              {prop.noChoice.btn2}
-            </button>
+          <div className="question__rod">
+            <div className="question__rod-text-right">
+              <span>
+                Le vih c'est surfait, mais l'attraper c'est vite fait{' '}
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div className="question__rod">
-        <div className="question__rod-text-right">
-          <span>Le vih c'est surfait, mais l'attraper c'est vite fait </span>
         </div>
       </div>
     </div>
