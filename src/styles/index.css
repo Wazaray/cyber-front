@@ -7,14 +7,13 @@
   --black: #000;
 }
 body {
-  /*font-family à trouver*/
   padding: 0;
   margin: 0;
 }
 
 * {
   box-sizing: border-box;
-  font-family: system-ui;
+  font-family: Monospace, serif;
 }
 
 img {
@@ -104,12 +103,12 @@ h1 {
   padding-right: 10px;
   border-bottom: 2px solid var(--black);
 }
+
 .question__navbar-cross::before {
   content: 'x';
   color: var(--black);
   font-weight: 300;
   font-size: 35px;
-  font-family: Arial, sans-serif;
 }
 
 .question__navbar-resize {
@@ -118,7 +117,7 @@ h1 {
   border: 2px solid var(--black);
   box-shadow: 2px -2px var(--light-pink), 2px -2px 0 2px var(--black);
 }
-/*          <div>vih c'est surfait, mais l'attraper vite fait </div>*/
+
 .question__navbar-reduce {
   width: 15px;
   border-bottom: 2px solid var(--black);
@@ -147,8 +146,6 @@ h1 {
   height: 100%;
   text-align: center;
   writing-mode: vertical-rl;
-
-  /* animation properties */
   -moz-transform: translateY(100%);
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
@@ -165,7 +162,6 @@ h1 {
   height: 100%;
   text-align: center;
   writing-mode: vertical-rl;
-  /* animation properties */
   -moz-transform: translateY(100%);
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
@@ -340,8 +336,9 @@ h1 {
 
 button {
   border: 2px solid var(--black);
-  max-width: 40%;
-  height: 50px;
+  max-width: 100%;
+  width: 200px;
+  height: 60px;
   background-color: white;
   font-weight: bold;
 
