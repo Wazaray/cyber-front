@@ -2,7 +2,6 @@ import React from 'react';
 
 function Crossroad({ prop, setNextSlide }) {
   const handleClick = event => {
-    console.log('click');
     setNextSlide(event.target.value);
   };
   return (
