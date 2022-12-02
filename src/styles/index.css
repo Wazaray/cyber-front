@@ -37,7 +37,7 @@ h1 {
 }
 
 .straightroad {
-  background-color: var(--light-blue);
+  background-color: var(--light-pink);
   background-size: 40px 40px;
   height: 100vh;
   background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
@@ -79,8 +79,9 @@ h1 {
   margin-top: auto;
   margin-bottom: auto;
   background-color: var(--light-green);
-  flex-basis: 40%;
-  height: 50%;
+  min-width: 70%;
+  max-width: 80%;
+  height: 65%;
   border: 2px solid black;
   box-shadow: 20px -20px var(--white), 20px -20px 0 2px var(--black),
     40px -40px var(--white), 40px -40px 0 2px var(--black);
@@ -104,6 +105,7 @@ h1 {
   padding-right: 10px;
   border-bottom: 2px solid var(--black);
 }
+
 .question__navbar-cross::before {
   content: 'x';
   color: var(--black);
@@ -112,12 +114,20 @@ h1 {
   font-family: Arial, sans-serif;
 }
 
-.question__navbar-resize {
+.question__navbar-resize-pink {
   width: 15px;
   height: 15px;
   border: 2px solid var(--black);
   box-shadow: 2px -2px var(--light-pink), 2px -2px 0 2px var(--black);
 }
+
+.question__navbar-resize-blue {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--black);
+  box-shadow: 2px -2px var(--light-blue), 2px -2px 0 2px var(--black);
+}
+
 /*          <div>vih c'est surfait, mais l'attraper vite fait </div>*/
 .question__navbar-reduce {
   width: 15px;
@@ -137,7 +147,6 @@ h1 {
   justify-content: space-evenly;
   gap: 10px;
   overflow: hidden;
-
 }
 
 .question__rod-text > span {
@@ -242,22 +251,28 @@ h1 {
   border: var(--black) solid 2px;
   padding: 40px;
   background-color: var(--white);
-  margin: 30px;
+  width: 90%;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
 }
 
 .question__phrase-answer {
   display: flex;
   gap: 50px;
+  width: 90%;
+  margin: auto;
   justify-content: center;
-
 }
 
 .information__content {
   margin-top: auto;
   margin-bottom: auto;
-  background-color: var(--light-green);
-  flex-basis: 40%;
-  height: 50%;
+  background-color: var(--light-yellow);
+  min-width : 55%;
+  max-width: 65%;
+  height: 65%;
   border: 2px solid black;
   box-shadow: -20px 20px var(--white), -20px 20px 0 2px var(--black),
     -40px 40px var(--white), -40px 40px 0 2px var(--black);
@@ -286,7 +301,7 @@ h1 {
   text-align: center;
 }
 
-.footer__button {
+.footer__button-pink {
   background-color: white;
   border: black solid 2px;
   padding: 1% 2% 1% 2%;
@@ -294,8 +309,20 @@ h1 {
   font-weight: bold;
 }
 
-.footer__button:hover {
+.footer__button-pink:hover {
   background-color: var(--light-pink);
+}
+
+.footer__button-blue {
+  background-color: white;
+  border: black solid 2px;
+  padding: 1% 2% 1% 2%;
+  font-weight: 2rem;
+  font-weight: bold;
+}
+
+.footer__button-blue:hover {
+  background-color: var(--light-blue);
 }
 
 .finish {
@@ -308,13 +335,12 @@ h1 {
 }
 
 .finish__text {
-  text-align: center;
   border: black solid 2px;
   background-color: white;
-  padding: 5% 4% 5% 4%;
-  margin: 5% auto auto auto;
+  padding: 4% 4% 4% 4%;
   font-weight: bold;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .next {
@@ -335,14 +361,31 @@ h1 {
 }
 
 .next__button:hover {
-  background-color: var(--light-pink);
+  background-color: var(--light-blue);
 }
 
 button {
   border: 2px solid var(--black);
-  max-width: 40%;
   height: 50px;
   background-color: white;
   font-weight: bold;
 
+}
+
+.crossroad__middle {
+  width: 100%;
+}
+
+.crossroad__button:hover {
+  background-color: var(--light-pink);
+}
+
+.straightroad__navbar {
+  background-color: var(--light-blue);
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-bottom: 2px solid var(--black);
 }
