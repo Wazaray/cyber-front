@@ -38,7 +38,7 @@ function BadCrossroad({ prop, setNextSlide, setBadScreen }) {
             className="question__navbar-resize"
             onClick={handleClickBadScreen}
           />
-          <div className="question__navbar-cross" onClick={handleClickCross} />
+          <div className="question__navbar-cross image-clignote" onClick={handleClickCross} />
         </div>
         <div className="question__grid">
           <div className="question__phrase">{prop.question}</div>
