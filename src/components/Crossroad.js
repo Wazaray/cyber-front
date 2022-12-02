@@ -1,14 +1,17 @@
 import React from 'react';
 import logo from '../images/journee-mondiale-sida.png';
 
-function Crossroad({ prop, setNextSlide }) {
+function Crossroad({ prop, setNextSlide, setBadScreen }) {
   const handleClick = event => {
-    console.log('click');
     setNextSlide(event.target.value);
   };
   const handleClickReset = () => {
     console.log('click reset');
     window.location.reload();
+  };
+  const handleClickBadScreen = event => {
+    console.log('click');
+    setBadScreen(true);
   };
   return (
     <div className="crossroad">
@@ -28,6 +31,14 @@ function Crossroad({ prop, setNextSlide }) {
               alt="ruban_rouge"
             />
           </div>
+      <div className="question__content">
+        <div className="question__navbar">
+          <div className="question__navbar-reduce" />
+          <div
+            className="question__navbar-resize"
+            onClick={handleClickBadScreen}
+          />
+          <div className="question__navbar-cross" />
         </div>
 
         <div className="straightroad__content">
@@ -57,6 +68,14 @@ function Crossroad({ prop, setNextSlide }) {
           <button className="footer__button-pink" onClick={handleClickReset}>
             réinitialiser
           </button>
+          <div className="question__phrase-answer">
+            <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
+              {prop.yesChoice.btn1}
+            </button>
+            <button value={prop.noChoice.refSuivant} onClick={handleClick}>
+              {prop.noChoice.btn2}
+            </button>
+          </div>
         </div>
       </div>
 
