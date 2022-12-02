@@ -6,19 +6,23 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
   };
 
   const handleClickBadScreen = event => {
+    console.log('click');
     setBadScreen(true);
-  }
+  };
 
   return (
     <div className="crossroad">
       <div className="question__rod">
         <div className="question__rod-text">test</div>
       </div>
-      <div className="question__content">
 
+      <div className="question__content">
         <div className="question__navbar">
           <div className="question__navbar-reduce" />
-          <div className="question__navbar-resize" onClick={handleClickBadScreen}/>
+          <div
+            className="question__navbar-resize"
+            onClick={handleClickBadScreen}
+          />
           <div className="question__navbar-cross" />
         </div>
         <div className="question__grid">
@@ -37,6 +41,7 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
           </div>
         </div>
       </div>
+
       <div className="question__rod">test</div>
     </div>
   );
