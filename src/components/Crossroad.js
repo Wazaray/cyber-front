@@ -1,10 +1,15 @@
 import React from 'react';
 
-function Crossroad({ prop, setNextSlide }) {
+function Crossroad({ prop, setNextSlide, setBadScreen }) {
   const handleClick = event => {
-    console.log('click');
     setNextSlide(event.target.value);
   };
+
+  const handleClickBadScreen = event => {
+    console.log('click');
+    setBadScreen(true);
+  };
+
   return (
     <div className="crossroad">
       <div className="question__rod">
@@ -14,10 +19,12 @@ function Crossroad({ prop, setNextSlide }) {
       </div>
 
       <div className="question__content">
-
         <div className="question__navbar">
           <div className="question__navbar-reduce" />
-          <div className="question__navbar-resize" />
+          <div
+            className="question__navbar-resize"
+            onClick={handleClickBadScreen}
+          />
           <div className="question__navbar-cross" />
         </div>
         <div className="question__grid">
@@ -27,12 +34,12 @@ function Crossroad({ prop, setNextSlide }) {
             </div>
           </div>
           <div className="question__phrase-answer">
-              <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
-                {prop.yesChoice.btn1}
-              </button>
-              <button value={prop.noChoice.refSuivant} onClick={handleClick}>
-                {prop.noChoice.btn2}
-              </button>
+            <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
+              {prop.yesChoice.btn1}
+            </button>
+            <button value={prop.noChoice.refSuivant} onClick={handleClick}>
+              {prop.noChoice.btn2}
+            </button>
           </div>
         </div>
       </div>
@@ -41,7 +48,7 @@ function Crossroad({ prop, setNextSlide }) {
           <span>Le vih c'est surfait, mais l'attraper c'est vite fait </span>
         </div>
       </div>
-     </div>
+    </div>
   );
 }
 
