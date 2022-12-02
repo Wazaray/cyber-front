@@ -32,7 +32,7 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
           </div>
         </div>
 
-        <div className="straightroad__content">
+        <div className="crossroad_content">
           <div className="question__content">
             <div className="question__navbar">
               <div className="question__navbar-reduce" />

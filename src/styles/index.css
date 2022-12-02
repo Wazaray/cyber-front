@@ -59,6 +59,13 @@ h1 {
     linear-gradient(to bottom, var(--white) 1px, transparent 1px);
 }
 
+.crossroad_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
 .question__content {
   margin-top: auto;
   margin-bottom: auto;
