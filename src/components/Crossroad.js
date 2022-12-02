@@ -22,7 +22,7 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
         <div className="question__navbar">
           <div className="question__navbar-reduce" />
           <div
-            className="question__navbar-resize"
+            className="question__navbar-resize image-clignote"
             onClick={handleClickBadScreen}
           />
           <div className="question__navbar-cross" />
