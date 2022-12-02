@@ -4,6 +4,7 @@
   --light-pink: #ffbef1;
   --light-blue: #bbe3f0;
   --white: #fff;
+  --black: #000;
 }
 body {
   /*font-family à trouver*/
@@ -17,7 +18,6 @@ body {
 }
 
 img {
-  /* petit truc pour permettre a une image de ne pas deborder du parent */
   max-width: 100%;
   height: auto;
   width: auto;
@@ -29,6 +29,7 @@ img {
   padding-left: 100px;
   padding-right: 100px;
   border: solid 1px black;
+  height: 100vh;
 }
 
 .Straightroad {
@@ -42,12 +43,80 @@ img {
     linear-gradient(to bottom, var(--white) 1px, transparent 1px);
 }
 
-.question {
+
+.crossroad {
+  background-color: var(--light-blue);
   display: flex;
+  justify-content: space-between;
+  background-size: 40px 40px;
+  height: 90vh;
+  background-image:
+          linear-gradient(to right, var(--white) 1px, transparent 1px),
+          linear-gradient(to bottom, var(--white) 1px, transparent 1px);
 }
+
 .question__content {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: var(--light-green);
+  flex-basis: 60%;
+  height: 50%;
+  border: 2px solid black;
+  box-shadow: 20px -20px var(--white), 20px -20px 0 2px var(--black), 40px -40px var(--white), 40px -40px 0 2px var(--black);
 }
+
 .question__rod {
+  background-color: var(--light-green);
+  flex-basis: 5%;
+  display: flex;
+  justify-content: center;
+}
+.question__navbar {
+  background-color: var(--light-pink);
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-bottom: 2px solid var(--black);
+}
+.question__navbar-cross::before {
+  content: 'x';
+  color: var(--black);
+  font-weight: 300;
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+}
+
+.question__navbar-resize {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--black);
+  box-shadow: 2px -2px var(--light-pink), 2px -2px 0 2px var(--black)
+}
+
+.question__navbar-reduce {
+  width: 15px;
+  border-bottom: 2px solid var(--black);
+}
+
+.question__rod-text {
+
+}
+.question__grid {
+  height: 85%;
+  display: grid;
+  grid: repeat(2, auto) / repeat(1, auto);
+  justify-items: center;
+  justify-content: center;
+}
+
+.question__phrase {
+  border: 1px solid var(--black);
+}
+
+.question__phrase-answer {
+  display: flex;
 }
 
 .toto {
@@ -64,12 +133,4 @@ img {
 .logo {
   height: 10vh;
   margin: auto;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    height: 10vh;
-    margin: auto;
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
