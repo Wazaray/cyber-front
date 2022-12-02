@@ -12,7 +12,9 @@ function Crossroad({ prop, setNextSlide }) {
           <span>Le vih c'est surfait, mais l'attraper c'est vite fait </span>
         </div>
       </div>
+
       <div className="question__content">
+
         <div className="question__navbar">
           <div className="question__navbar-reduce" />
           <div className="question__navbar-resize" />
@@ -25,13 +27,12 @@ function Crossroad({ prop, setNextSlide }) {
             </div>
           </div>
           <div className="question__phrase-answer">
-            <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
-              OUI !
-            </button>
-
-            <button value={prop.noChoice.refSuivant} onClick={handleClick}>
-              NON !
-            </button>
+              <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
+                {prop.yesChoice.btn1}
+              </button>
+              <button value={prop.noChoice.refSuivant} onClick={handleClick}>
+                {prop.noChoice.btn2}
+              </button>
           </div>
         </div>
       </div>
@@ -40,7 +41,7 @@ function Crossroad({ prop, setNextSlide }) {
           <span>Le vih c'est surfait, mais l'attraper c'est vite fait </span>
         </div>
       </div>
-    </div>
+     </div>
   );
 }
 

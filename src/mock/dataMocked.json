@@ -1,44 +1,130 @@
 [{
     "id":998,
     "isCrossroad":false,
-    "messageInfo":"C'est de début",
-    "question":"ici, la question si le isCrossroad=true",
+    "messageInfo":"L'histoire commence ici !",
+    "question":null,
     "refSuivant":1,
-    "yesChoice":{"refSuivant":3,"risk":0.5},
-    "noChoice":{"refSuivant":5,"risk":-0.5}
+    "btn0":"C'est parti",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
 },{
     "id":1,
-    "isCrossroad":true,
-    "messageInfo":"ici le message de l'info",
-    "question":"Si tu veux continuer, choisis oui ou non",
-    "refSuivant":0,
-    "yesChoice":{"refSuivant":2,"risk":0.5},
-    "noChoice":{"refSuivant":3,"risk":-0.5}
+    "isCrossroad":false,
+    "messageInfo":"Ce soir, tu ne rentres pas seul(e). Regards complices, sourires entendus, soirée un peu arrosée, vous décidez de vous retrouver chez toi...",
+    "question":null,
+    "refSuivant":2,
+    "btn0":"Niiiiiiice",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
 },
 {
     "id":2,
     "isCrossroad":false,
-    "messageInfo":"tu as choisi oui",
+    "messageInfo":"Pas besoin de te faire un dessin, vous passez rapidement aux choses sérieuses.",
     "question":null,
-    "refSuivant":999,
-    "yesChoice":{"refSuivant":null,"risk":null},
-    "noChoice":{"refSuivant":null,"risk":null}
+    "refSuivant":3,
+    "btn0":"C'est chaud...",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
 },
 {
     "id":3,
+    "isCrossroad":true,
+    "messageInfo":null,
+    "question":"Mais, emportés par la fougue, avez-vous pensé à mettre un préservatif ?",
+    "refSuivant":null,
+    "btn0":null,
+    "yesChoice":{"refSuivant":4,"btn1":"Evidemment !"},
+    "noChoice":{"refSuivant":9,"btn2":"Euh... non..."}
+},
+{
+    "id":4,
     "isCrossroad":false,
-    "messageInfo":"tu as choisi non",
+    "messageInfo":"Parfait ! Le rapport est super agréable, c'est le feu d'artifice...",
     "question":null,
-    "refSuivant":999,
+    "refSuivant":5,
+    "btn0":"Trop bien :)",
     "yesChoice":{"refSuivant":null,"risk":null},
     "noChoice":{"refSuivant":null,"risk":null}
 },
 {
-    "id":999,
-    "isCrossroad":null,
-    "messageInfo":"C'est fini !!",
+    "id":5,
+    "isCrossroad":false,
+    "messageInfo":"Aïe ! Au moment du retrait, vous vous rendez compte que le préservatif a craqué",
     "question":null,
+    "refSuivant":6,
+    "btn0":"Meeeeeeerde...",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
+},
+{
+    "id":6,
+    "isCrossroad":true,
+    "messageInfo":null,
+    "question":"Du coup, dès le lendemain...",
     "refSuivant":null,
-    "yesChoice":{"refSuivant":null,"risk":null},
-    "noChoice":{"refSuivant":null,"risk":null}
-}]
+    "btn0":null,
+    "yesChoice":{"refSuivant":7,"btn1":"Je file à l'hôpital !"},
+    "noChoice":{"refSuivant":8,"btn2":"Je vais faire un test de dépistage."}
+},
+{
+    "id":7,
+    "isCrossroad":false,
+    "messageInfo":"Très bonne idée ! tu pourras suivre un TPE (traitement post-exposition) afin de limiter les risques de contamination au VIH",
+    "question":null,
+    "refSuivant":999,
+    "btn0":"Suite",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
+},
+{
+    "id":8,
+    "isCrossroad":false,
+    "messageInfo":"Se faire dépister, c'est important. Mais là, l'urgence, c'est de te rendre dans un planning familial ou dans un service d'urgence pour suivre un TPE(traitement post-exposition) afin de limiter les risques de contamination au VIH",
+    "question":null,
+    "refSuivant":999,
+    "btn0":"Suite",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
+},
+{
+    "id":9,
+    "isCrossroad":true,
+    "messageInfo":null,
+    "question":"Aïe... Le rapport est très agréable, mais... As-tu conscience des risques encourus ?",
+    "refSuivant":null,
+    "btn0":null,
+    "yesChoice":{"refSuivant":6,"btn1":"Oui"},
+    "noChoice":{"refSuivant":10,"btn2":"Pas vraiment"}
+},
+{
+    "id":10,
+    "isCrossroad":true,
+    "messageInfo":null,
+    "question":"Un rapport non protégé par un préservatif peut entraîner la transmission du VIH, un virus responsable d'une maladie auto-immune qui, si elle n'est pas dépistée et traitée, réduit grandement l'espérance de vie",
+    "refSuivant":null,
+    "btn0":null,
+    "yesChoice":{"refSuivant":11,"btn1":"Ce n'est pas grave, car il n'y a pas eu de pénétration vaginale"},
+    "noChoice":{"refSuivant":8,"btn2":"Alors, que faire ?"}
+},
+{
+    "id":11,
+    "isCrossroad":false,
+    "messageInfo":"Les rapports oraux (fellation, cunnilingus) et anals non protégés peuvent aussi transmettre le VIH",
+    "question":null,
+    "refSuivant":8,
+    "btn0":"Alors que faire ?",
+    "yesChoice":{"refSuivant":11,"btn1":"Ce n'est pas grave, car il n'y a pas eu de pénétration vaginale"},
+    "noChoice":{"refSuivant":8,"btn2":"Alors, que faire ?"}
+},
+{
+    "id":999,
+    "isCrossroad":false,
+    "messageInfo":"Pour en savoir plus, rendez-vous sur www.sida-info-service.org",
+    "question":null,
+    "refSuivant":998,
+    "btn0":"Je recommence !",
+    "yesChoice":{"refSuivant":null,"btn1":null},
+    "noChoice":{"refSuivant":null,"btn2":null}
+}
+]
