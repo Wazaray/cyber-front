@@ -17,7 +17,7 @@ function App() {
     setScreen(newScreen);
   };
   return (
-    <div className="App">
+    <div>
       <Header />
       <main>
         <Screen screen={screen} setNextSlide={setNewData} />
