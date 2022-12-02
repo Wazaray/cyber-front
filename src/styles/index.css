@@ -134,6 +134,17 @@ img {
   display: flex;
 }
 
+.information__content {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: var(--light-green);
+  flex-basis: 40%;
+  height: 50%;
+  border: 2px solid black;
+  box-shadow: -20px 20px var(--white), -20px 20px 0 2px var(--black),
+    -40px 40px var(--white), -40px 40px 0 2px var(--black);
+}
+
 .header {
   height: 15vh;
   display: flex;
@@ -170,7 +181,7 @@ img {
 }
 
 .finish {
-  height: 50%;
+  height: 55%;
   width: 90%;
   margin: auto;
   display: flex;
@@ -185,10 +196,11 @@ img {
   padding: 5% 4% 5% 4%;
   margin: 5% auto auto auto;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .next {
-  height: 30%;
+  height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;

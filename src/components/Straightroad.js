@@ -25,7 +25,7 @@ function Straightroad({ prop, setNextSlide }) {
       </div>
 
       <div className="straightroad__content">
-        <div className="question__content">
+        <div className="information__content">
           <div className="question__navbar">
             <div className="question__navbar-reduce" />
             <div className="question__navbar-resize" />
