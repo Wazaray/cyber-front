@@ -127,8 +127,8 @@ h1 {
   font-size: 30px;
   height: 100%;
   text-align: center;
-  writing-mode: vertical-lr;
-  text-orientation: revert;
+  writing-mode: vertical-rl;
+
   /* animation properties */
   -moz-transform: translateY(100%);
   -webkit-transform: translateY(100%);
@@ -145,8 +145,7 @@ h1 {
   font-size: 30px;
   height: 100%;
   text-align: center;
-  writing-mode: vertical-lr;
-  text-orientation: revert;
+  writing-mode: vertical-rl;
   /* animation properties */
   -moz-transform: translateY(100%);
   -webkit-transform: translateY(100%);
