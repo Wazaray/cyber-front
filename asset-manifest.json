@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.ba23029a.css",
-    "main.js": "/static/js/main.661e5a57.js",
+    "main.js": "/static/js/main.d6ff5601.js",
     "static/js/787.bad038fb.chunk.js": "/static/js/787.bad038fb.chunk.js",
     "static/media/journee-mondiale-sida.png": "/static/media/journee-mondiale-sida.b6ef895939f8c376be9f.png",
     "index.html": "/index.html",
     "main.ba23029a.css.map": "/static/css/main.ba23029a.css.map",
-    "main.661e5a57.js.map": "/static/js/main.661e5a57.js.map",
+    "main.d6ff5601.js.map": "/static/js/main.d6ff5601.js.map",
     "787.bad038fb.chunk.js.map": "/static/js/787.bad038fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba23029a.css",
-    "static/js/main.661e5a57.js"
+    "static/js/main.d6ff5601.js"
   ]
 }
