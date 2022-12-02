@@ -64,12 +64,12 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="footer">
-        <button className="footer__button-pink" onClick={handleClickReset}>
-          réinitialiser
-        </button>
+        <div className="footer">
+          <button className="footer__button-pink" onClick={handleClickReset}>
+            réinitialiser
+          </button>
+        </div>
       </div>
 
       <div className="question__rod">
