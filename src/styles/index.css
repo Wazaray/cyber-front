@@ -23,6 +23,10 @@ img {
   width: auto;
 }
 
+h1 {
+  font-size: 20px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +73,9 @@ img {
   background-color: var(--light-green);
   flex-basis: 5%;
   display: flex;
+  border-top: 1px solid var(--white);
   justify-content: center;
+
 }
 .question__navbar {
   background-color: var(--light-pink);
@@ -94,29 +100,135 @@ img {
   border: 2px solid var(--black);
   box-shadow: 2px -2px var(--light-pink), 2px -2px 0 2px var(--black)
 }
-
+/*          <div>vih c'est surfait, mais l'attraper vite fait </div>*/
 .question__navbar-reduce {
   width: 15px;
   border-bottom: 2px solid var(--black);
 }
 
 .question__rod-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  overflow: hidden;
+}
+.question__rod-text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  overflow: hidden;
+}
 
+.question__rod-text > span {
+  word-spacing: 60px;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: 100%;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: revert;
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+.question__rod-text-right > span {
+  word-spacing: 60px;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: 100%;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: revert;
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+
+  -moz-animation: my-animation-2 10s linear infinite;
+  -webkit-animation: my-animation-2 10s linear infinite;
+  animation: my-animation-2 10s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(-100%); }
+  to { -moz-transform: translateY(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(-100%); }
+  to { -webkit-transform: translateY(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation-2 {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation-2 {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation-2 {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }
 .question__grid {
   height: 85%;
   display: grid;
   grid: repeat(2, auto) / repeat(1, auto);
   justify-items: center;
-  justify-content: center;
 }
 
 .question__phrase {
-  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question__phrase-content {
+  border: var(--black) solid 2px;
+  padding: 40px;
+  background-color: var(--white);
+  margin: 30px;
 }
 
 .question__phrase-answer {
   display: flex;
+  gap: 50px;
 }
 
 .toto {
@@ -133,4 +245,13 @@ img {
 .logo {
   height: 10vh;
   margin: auto;
+}
+
+button {
+  border: 2px solid var(--black);
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+
 }

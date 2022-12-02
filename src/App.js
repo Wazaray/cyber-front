@@ -17,9 +17,8 @@ function App() {
   };
   return (
     <div>
-      <Header />
       <main>
-        <Screen screen={screen} setNextSlide={setNewData}/>
+        <Screen screen={screen} setNextSlide={setNewData} />
       </main>
     </div>
   );
