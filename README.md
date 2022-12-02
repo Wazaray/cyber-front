@@ -1,31 +1,18 @@
-### `npm start`
+### Install project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Use `npm install`
+
+### Start project
+
+Use `npm start`
 
 ### `./components`
 
 All components of pages
 
-### `./pages`
-
-Render of all components per page
-
-### `./models`
-
-All models of data
-
-### `./queries`
-
-All api call and useCustom
-
 ### `./styles`
 
 Global style css
-
-### `./utils`
-
-Functions who can used in all project
 
 ### `./images`
  

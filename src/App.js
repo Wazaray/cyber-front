@@ -4,7 +4,6 @@ import BadScreen from './components/BadScreen';
 
 import { useState } from 'react';
 import data from './mock/dataMocked.json';
-//import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [screen, setScreen] = useState(

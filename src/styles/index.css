@@ -49,21 +49,6 @@ h1 {
   height: 70%;
 }
 
-.lastscreen {
-  background-color: var(--light-blue);
-  background-size: 40px 40px;
-  height: 100vh;
-  background-image: linear-gradient(to right, var(--white) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--white) 1px, transparent 1px);
-}
-
-.lastscreen__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-}
-
 .crossroad {
   background-color: var(--light-blue);
   display: flex;
@@ -81,7 +66,7 @@ h1 {
   min-width: 70%;
   max-width: 80%;
   height: 65%;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   box-shadow: 20px -20px var(--white), 20px -20px 0 2px var(--black),
     40px -40px var(--white), 40px -40px 0 2px var(--black);
 }
