@@ -1,22 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Screen from './components/Screen';
+
+import { useState } from 'react';
+import data from './mock/dataMocked.json';
+//import { Routes, Route } from 'react-router-dom';
 
 function App() {
+  const [screen, setScreen] = useState(
+    data.filter(screen => screen.id === 998)[0]
+  );
+
+  const setNewData = newSlide => {
+    const newScreen = data.filter(screen => screen.id == newSlide)[0];
+    setScreen(newScreen);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <main>
+        <Screen screen={screen} setNextSlide={setNewData}/>
+      </main>
     </div>
   );
 }
