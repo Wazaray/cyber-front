@@ -1,8 +1,8 @@
 :root {
-  --light-green: #9DF2B0;
-  --light-yellow: #F7F4A4;
-  --light-pink: #FFBEF1;
-  --light-blue: #BBE3F0;
+  --light-green: #9df2b0;
+  --light-yellow: #f7f4a4;
+  --light-pink: #ffbef1;
+  --light-blue: #bbe3f0;
   --white: #fff;
 }
 body {
@@ -31,21 +31,45 @@ img {
   border: solid 1px black;
 }
 
-.App {
+.Straightroad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--light-blue);
   background-size: 40px 40px;
-  height: 100vh;
-  background-image:
-          linear-gradient(to right, var(--white) 1px, transparent 1px),
-          linear-gradient(to bottom, var(--white) 1px, transparent 1px);
+  height: 90vh;
+  background-image: linear-gradient(to right, var(--white) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--white) 1px, transparent 1px);
 }
 
 .question {
-display: flex;
+  display: flex;
 }
 .question__content {
-  
 }
 .question__rod {
+}
 
+.toto {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border: black solid 1px;
+}
+
+.header{
+  height: 10vh;
+}
+
+.logo {
+  height: 10vh;
+  margin: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    height: 10vh;
+    margin: auto;
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
