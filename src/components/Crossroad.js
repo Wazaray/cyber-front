@@ -1,10 +1,14 @@
 import React from 'react';
 
-function Crossroad({ prop, setNextSlide }) {
+function Crossroad({ prop, setNextSlide, setBadScreen }) {
   const handleClick = event => {
-    console.log('click');
     setNextSlide(event.target.value);
   };
+
+  const handleClickBadScreen = event => {
+    setBadScreen(true);
+  }
+
   return (
     <div className="crossroad">
       <div className="question__rod">
@@ -14,7 +18,7 @@ function Crossroad({ prop, setNextSlide }) {
 
         <div className="question__navbar">
           <div className="question__navbar-reduce" />
-          <div className="question__navbar-resize" />
+          <div className="question__navbar-resize" onClick={handleClickBadScreen}/>
           <div className="question__navbar-cross" />
         </div>
         <div className="question__grid">

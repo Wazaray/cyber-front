@@ -2,8 +2,6 @@ import React from 'react';
 
 function Straightroad({ prop, setNextSlide }) {
   const handleClick = event => {
-    console.log('click');
-    console.log(event.target.value);
     setNextSlide(event.target.value);
   };
   return (
