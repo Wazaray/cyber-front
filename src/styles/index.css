@@ -1,0 +1,51 @@
+:root {
+  --light-green: #9DF2B0;
+  --light-yellow: #F7F4A4;
+  --light-pink: #FFBEF1;
+  --light-blue: #BBE3F0;
+  --white: #fff;
+}
+body {
+  /*font-family à trouver*/
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+img {
+  /* petit truc pour permettre a une image de ne pas deborder du parent */
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: solid 1px black;
+}
+
+.App {
+  background-color: var(--light-blue);
+  background-size: 40px 40px;
+  height: 100vh;
+  background-image:
+          linear-gradient(to right, var(--white) 1px, transparent 1px),
+          linear-gradient(to bottom, var(--white) 1px, transparent 1px);
+}
+
+.question {
+display: flex;
+}
+.question__content {
+  
+}
+.question__rod {
+
+}
