@@ -1,10 +1,13 @@
-import Crossroad from './Crossroad';
+import BadCrossroad from './BadCrossroad';
 import Straightroad from './Straightroad';
 
-function Screen({ screen, setNextSlide, setBadScreen }) {
+function BadScreen({ screen, setNextSlide, setBadScreen }) {
+  /*const setNextSlide = () => {
+    setScreen(data.filter(screen => screen.id === slide)[0]);
+  };*/
   if (screen.isCrossroad === true) {
     return (
-      <Crossroad
+      <BadCrossroad
         prop={screen}
         setNextSlide={setNextSlide}
         setBadScreen={setBadScreen}
@@ -15,4 +18,4 @@ function Screen({ screen, setNextSlide, setBadScreen }) {
   return <Straightroad prop={screen} setNextSlide={setNextSlide} />;
 }
 
-export default Screen;
+export default BadScreen;
