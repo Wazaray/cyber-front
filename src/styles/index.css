@@ -32,17 +32,34 @@ img {
   height: 100vh;
 }
 
-.Straightroad {
+.straightroad {
+  background-color: var(--light-blue);
+  background-size: 40px 40px;
+  height: 100vh;
+  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.straightroad__content {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70%;
+}
+
+.lastscreen {
   background-color: var(--light-blue);
   background-size: 40px 40px;
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(to right, var(--white) 1px, transparent 1px),
     linear-gradient(to bottom, var(--white) 1px, transparent 1px);
 }
 
+.lastscreen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
 
 .crossroad {
   background-color: var(--light-blue);
@@ -50,19 +67,19 @@ img {
   justify-content: space-between;
   background-size: 40px 40px;
   height: 90vh;
-  background-image:
-          linear-gradient(to right, var(--white) 1px, transparent 1px),
-          linear-gradient(to bottom, var(--white) 1px, transparent 1px);
+  background-image: linear-gradient(to right, var(--white) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--white) 1px, transparent 1px);
 }
 
 .question__content {
   margin-top: auto;
   margin-bottom: auto;
   background-color: var(--light-green);
-  flex-basis: 60%;
+  flex-basis: 40%;
   height: 50%;
   border: 2px solid black;
-  box-shadow: 20px -20px var(--white), 20px -20px 0 2px var(--black), 40px -40px var(--white), 40px -40px 0 2px var(--black);
+  box-shadow: 20px -20px var(--white), 20px -20px 0 2px var(--black),
+    40px -40px var(--white), 40px -40px 0 2px var(--black);
 }
 
 .question__rod {
@@ -92,7 +109,7 @@ img {
   width: 15px;
   height: 15px;
   border: 2px solid var(--black);
-  box-shadow: 2px -2px var(--light-pink), 2px -2px 0 2px var(--black)
+  box-shadow: 2px -2px var(--light-pink), 2px -2px 0 2px var(--black);
 }
 
 .question__navbar-reduce {
@@ -100,9 +117,6 @@ img {
   border-bottom: 2px solid var(--black);
 }
 
-.question__rod-text {
-
-}
 .question__grid {
   height: 85%;
   display: grid;
@@ -119,18 +133,63 @@ img {
   display: flex;
 }
 
-.toto {
-  width: 50%;
-  height: 50%;
+.header {
+  height: 15vh;
+  display: flex;
+}
+
+.header__logo {
+  height: 75%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo-resize {
+  height: 100%;
+}
+
+.footer {
+  height: 15%;
+  text-align: center;
+}
+
+.footer__button {
   background-color: white;
   border: black solid 1px;
+  padding: 1% 2% 1% 2%;
+  font-weight: 2rem;
 }
 
-.header{
-  height: 10vh;
+.finish {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  height: 10vh;
+.finish__text {
+  text-align: center;
   margin: auto;
+  border: black solid 2px;
+  background-color: white;
+  padding: 5% 4% 5% 4%;
+}
+
+.next {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next__button {
+  margin: auto;
+  background-color: white;
+  border: black solid 1px;
+  padding: 1% 2% 1% 2%;
+  font-weight: 2rem;
+  border: black solid 2px;
 }
