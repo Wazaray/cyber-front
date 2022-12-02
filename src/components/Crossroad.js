@@ -17,7 +17,6 @@ function Crossroad({ prop, setNextSlide, setBadScreen }) {
           <span>Le vih c'est surfait, mais l'attraper c'est vite fait </span>
         </div>
       </div>
-
       <div className="question__content">
         <div className="question__navbar">
           <div className="question__navbar-reduce" />
