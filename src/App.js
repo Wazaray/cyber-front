@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import Screen from './components/Screen';
@@ -20,7 +19,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <Screen screen={screen} setNextSlide={setNewData} />
+        <Screen screen={screen} setNextSlide={setNewData}/>
       </main>
     </div>
   );

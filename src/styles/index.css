@@ -1,8 +1,8 @@
 :root {
-  --light-green: #9DF2B0;
-  --light-yellow: #F7F4A4;
-  --light-pink: #FFBEF1;
-  --light-blue: #BBE3F0;
+  --light-green: #9df2b0;
+  --light-yellow: #f7f4a4;
+  --light-pink: #ffbef1;
+  --light-blue: #bbe3f0;
   --white: #fff;
   --black: #000;
 }
@@ -32,6 +32,18 @@ img {
   height: 100vh;
 }
 
+.Straightroad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+  background-size: 40px 40px;
+  height: 90vh;
+  background-image: linear-gradient(to right, var(--white) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--white) 1px, transparent 1px);
+}
+
+
 .crossroad {
   background-color: var(--light-blue);
   display: flex;
@@ -51,7 +63,6 @@ img {
   height: 50%;
   border: 2px solid black;
   box-shadow: 20px -20px var(--white), 20px -20px 0 2px var(--black), 40px -40px var(--white), 40px -40px 0 2px var(--black);
-}
 
 .question__rod {
   background-color: var(--light-green);
@@ -107,3 +118,18 @@ img {
   display: flex;
 }
 
+.toto {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border: black solid 1px;
+}
+
+.header{
+  height: 10vh;
+}
+
+.logo {
+  height: 10vh;
+  margin: auto;
+}
