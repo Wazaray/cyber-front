@@ -14,12 +14,12 @@ function Crossroad({ prop, setNextSlide }) {
         <div className="answer_block">
           <div className="answer_yes">
             <button value={prop.yesChoice.refSuivant} onClick={handleClick}>
-              OUI !
+              {prop.yesChoice.btn1}
             </button>
           </div>
           <div className="answer_no">
             <button value={prop.noChoice.refSuivant} onClick={handleClick}>
-              NON !
+              {prop.noChoice.btn2}
             </button>
           </div>
         </div>

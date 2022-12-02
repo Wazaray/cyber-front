@@ -7,9 +7,7 @@ function Screen({ screen, setNextSlide }) {
   /*const setNextSlide = () => {
     setScreen(data.filter(screen => screen.id === slide)[0]);
   };*/
-  if (screen.id === 999) {
-    return <LastScreen />;
-  } else if (screen.isCrossroad === true) {
+  if (screen.isCrossroad === true) {
     return <Crossroad prop={screen} setNextSlide={setNextSlide} />;
   }
 
