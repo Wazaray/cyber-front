@@ -10,6 +10,7 @@ function Crossroad({ prop, setNextSlide }) {
       <div className="question__rod">
         <div className="question__rod-text">test</div>
       </div>
+
       <div className="question__content">
 
         <div className="question__navbar">
@@ -33,6 +34,7 @@ function Crossroad({ prop, setNextSlide }) {
           </div>
         </div>
       </div>
+      
       <div className="question__rod">test</div>
     </div>
   );
