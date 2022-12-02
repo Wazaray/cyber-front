@@ -370,6 +370,19 @@ button {
 
 }
 
+
+.image-clignote  {
+  animation-duration: .8s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+@keyframes clignoter {
+ 0%   { opacity:1; }
+ 40%   {opacity:0; }
+ 100% { opacity:1; }
+}
+
 .crossroad__middle {
   width: 100%;
 }
@@ -387,3 +400,4 @@ button {
   padding-right: 10px;
   border-bottom: 2px solid var(--black);
 }
+
