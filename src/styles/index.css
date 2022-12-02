@@ -88,6 +88,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .question__navbar {
   background-color: var(--light-pink);
   display: flex;
@@ -158,13 +159,20 @@ img {
 
 .footer__button {
   background-color: white;
-  border: black solid 1px;
+  border: black solid 2px;
   padding: 1% 2% 1% 2%;
   font-weight: 2rem;
+  font-weight: bold;
+}
+
+.footer__button:hover {
+  background-color: var(--light-pink);
 }
 
 .finish {
-  height: 40%;
+  height: 50%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,14 +180,15 @@ img {
 
 .finish__text {
   text-align: center;
-  margin: auto;
   border: black solid 2px;
   background-color: white;
   padding: 5% 4% 5% 4%;
+  margin: 5% auto auto auto;
+  font-weight: bold;
 }
 
 .next {
-  height: 40%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,4 +201,9 @@ img {
   padding: 1% 2% 1% 2%;
   font-weight: 2rem;
   border: black solid 2px;
+  font-weight: bold;
+}
+
+.next__button:hover {
+  background-color: var(--light-pink);
 }
