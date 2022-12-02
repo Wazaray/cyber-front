@@ -25,7 +25,11 @@ function BadCrossroad({ prop, setNextSlide, setBadScreen }) {
   return (
     <div className="crossroad badcrossroad">
       <div className="question__rod">
-        <div className="question__rod-text">test</div>
+        <div className="question__rod-text question__rod-text__bad" onClick="">
+          <span>
+            <a href="/">Cliquez ici</a>
+          </span>
+        </div>
       </div>
       <div className="question__content">
         <div className="question__navbar bad__navbar">
@@ -52,7 +56,11 @@ function BadCrossroad({ prop, setNextSlide, setBadScreen }) {
           </div>
         </div>
       </div>
-      <div className="question__rod">test</div>
+      <div className="question__rod">
+        <div className="question__rod-text-right">
+          <span>Click Here ! </span>
+        </div>
+      </div>
     </div>
   );
 }

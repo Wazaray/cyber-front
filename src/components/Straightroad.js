@@ -23,7 +23,7 @@ function Straightroad({ prop, setNextSlide }) {
       </div>
 
       <div className="straightroad__content">
-        <div className="question__content">
+        <div className="information__content">
           <div className="question__navbar">
             <div className="question__navbar-reduce" />
             <div className="question__navbar-resize" />
@@ -33,15 +33,20 @@ function Straightroad({ prop, setNextSlide }) {
             <div className="finish__text">{prop.messageInfo}</div>
           </div>
           <div className="next">
-            <button className="next__button" value={prop.refSuivant} onClick={handleClick}>
-            {prop.btn0}
+            <button
+              className="next__button"
+              value={prop.refSuivant}
+              onClick={handleClick}>
+              {prop.btn0}
             </button>
           </div>
         </div>
       </div>
 
       <div className="footer">
-        <button className="footer__button" onClick={handleClickReset}>réinitialiser</button>
+        <button className="footer__button" onClick={handleClickReset}>
+          réinitialiser
+        </button>
       </div>
     </div>
   );
