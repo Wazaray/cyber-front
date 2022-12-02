@@ -1,44 +1,1142 @@
-[{
-    "id":998,
-    "isCrossroad":false,
-    "messageInfo":"C'est de début",
-    "question":"ici, la question si le isCrossroad=true",
-    "refSuivant":1,
-    "yesChoice":{"refSuivant":3,"risk":0.5},
-    "noChoice":{"refSuivant":5,"risk":-0.5}
-},{
-    "id":1,
-    "isCrossroad":true,
-    "messageInfo":"ici le message de l'info",
-    "question":"Si tu veux continuer, choisis oui ou non",
-    "refSuivant":0,
-    "yesChoice":{"refSuivant":2,"risk":0.5},
-    "noChoice":{"refSuivant":3,"risk":-0.5}
-},
-{
-    "id":2,
-    "isCrossroad":false,
-    "messageInfo":"tu as choisi oui",
-    "question":null,
-    "refSuivant":999,
-    "yesChoice":{"refSuivant":null,"risk":null},
-    "noChoice":{"refSuivant":null,"risk":null}
-},
-{
-    "id":3,
-    "isCrossroad":false,
-    "messageInfo":"tu as choisi non",
-    "question":null,
-    "refSuivant":999,
-    "yesChoice":{"refSuivant":null,"risk":null},
-    "noChoice":{"refSuivant":null,"risk":null}
-},
-{
-    "id":999,
-    "isCrossroad":null,
-    "messageInfo":"C'est fini !!",
-    "question":null,
-    "refSuivant":null,
-    "yesChoice":{"refSuivant":null,"risk":null},
-    "noChoice":{"refSuivant":null,"risk":null}
-}]
+[
+    {
+      "id": 1,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Ton personnage est un homme ?",
+      "refSuivant": null,
+      "yesChoice": {
+        "refSuivant": 2,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 3,
+        "risk": null
+      }
+    },
+    {
+      "id": 2,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Ton partenaire est une femme ?",
+      "refSuivant": null,
+      "yesChoice": {
+        "refSuivant": 5,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 4,
+        "risk": null
+      }
+    },
+    {
+      "id": 3,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Ton personnage est une femme?",
+      "refSuivant": null,
+      "yesChoice": {
+        "refSuivant": 4,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 1,
+        "risk": null
+      }
+    },
+    {
+      "id": 4,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Ton partenaire est un homme ?",
+      "refSuivant": null,
+      "yesChoice": {
+        "refSuivant": 42,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 1,
+        "risk": null
+      }
+    },
+    {
+      "id": 5,
+      "isCrossroad": false,
+      "messageInfo": "Bienvenue Nicolas",
+      "question": null,
+      "refSuivant": 611,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 6,
+      "isCrossroad": false,
+      "messageInfo": " Tu dors avec Léa ce soir et vous avez prévu d’avoir une relation sexuelle. Mais comment savoir si tout se passera bien ? Le jeu suivant va te permettre de savoir quel est ton niveau de connaissance en matière de protection liées aux infections sexuellement transmissibles (IST).",
+      "question": null,
+      "refSuivant": 8,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 42,
+      "isCrossroad": false,
+      "messageInfo": "Bienvenue Léa",
+      "question": null,
+      "refSuivant": 7,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 7,
+      "isCrossroad": false,
+      "messageInfo": "Tu dors avec Nicolas ce soir et vous avez prévu d’avoir une relation sexuelle. Mais comment savoir si tout se passera bien ? Le jeu suivant va te permettre de savoir quel est ton niveau de connaissance en matière de protection liées aux infections sexuellement transmissibles (IST).",
+      "question": null,
+      "refSuivant": 9,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 611,
+      "isCrossroad": false,
+      "messageInfo": "Tu dors avec Léa ce soir et vous avez prévu d’avoir une relation sexuelle. Mais comment savoir si tout se passera bien ? Le jeu suivant va te permettre de savoir quel est ton niveau de connaissance en matière de protection liées aux infections sexuellement transmissibles (IST).",
+      "question": null,
+      "refSuivant": 711,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 711,
+      "isCrossroad": false,
+      "messageInfo": "Léa, je n’ai pas pris de préservatifs. Est-ce que tu en aurais par hasard ? Léa : Non je n’en ai pas non plus. Comment va-t-on faire ?",
+      "question": null,
+      "refSuivant": 10,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 8,
+      "isCrossroad": false,
+      "messageInfo": "Léa, je n’ai pas pris de préservatifs. Est-ce que tu en aurais par hasard ? Léa : Non je n’en ai pas non plus. Comment va-t-on faire ? ",
+      "question": null,
+      "refSuivant": 10,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 9,
+      "isCrossroad": false,
+      "messageInfo": "Nicolas, je n’ai pas pris de préservatifs. Est-ce que tu en aurais par hasard ? Nicolas : Non je n’en ai pas non plus. Comment va-t-on faire ? ",
+      "question": null,
+      "refSuivant": 12,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 10,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Proposes-tu à Léa d’avoir un rapport sans préservatif ?",
+      "refSuivant": 11,
+      "yesChoice": {
+        "refSuivant": 11,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 11,
+        "risk": null
+      }
+    },
+    {
+      "id": 11,
+      "isCrossroad": false,
+      "messageInfo": "Message de prévention sur l’efficacité des préservatifs",
+      "question": null,
+      "refSuivant": 13,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 12,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Proposes-tu à Nicolas d’avoir un rapport sans préservatif ?",
+      "refSuivant": 1111,
+      "yesChoice": {
+        "refSuivant": 1111,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 1111,
+        "risk": null
+      }
+    },
+    {
+      "id": 1111,
+      "isCrossroad": false,
+      "messageInfo": "Message de prévention sur l’efficacité des préservatifs",
+      "question": null,
+      "refSuivant": 15,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 13,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "As-tu fais un test de dépistage récemment ?",
+      "refSuivant": 14,
+      "yesChoice": {
+        "refSuivant": 14,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 14,
+        "risk": null
+      }
+    },
+    {
+      "id": 14,
+      "isCrossroad": false,
+      "messageInfo": "Message d’information sur ce en quoi consiste un dépistage",
+      "question": null,
+      "refSuivant": 16,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 15,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "As-tu fais un test de dépistage récemment ?",
+      "refSuivant": 1411,
+      "yesChoice": {
+        "refSuivant": 1411,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 1411,
+        "risk": null
+      }
+    },
+    {
+      "id": 1411,
+      "isCrossroad": false,
+      "messageInfo": "Message d’information sur ce en quoi consiste un dépistage",
+      "question": null,
+      "refSuivant": 18,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 16,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Et toi Léa, as-tu fais un test de dépistage récemment ?",
+      "refSuivant": 17,
+      "yesChoice": {
+        "refSuivant": 17,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 17,
+        "risk": null
+      }
+    },
+    {
+      "id": 17,
+      "isCrossroad": false,
+      "messageInfo": "Message d’information sur l’utilité et les bienfaits du dépistage",
+      "question": null,
+      "refSuivant": 63,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 63,
+      "isCrossroad": true,
+      "messageInfo": "Souhaites-tu aller plus loin quand même ?",
+      "question": null,
+      "refSuivant": 19,
+      "yesChoice": {
+        "refSuivant": 19,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 19,
+        "risk": null
+      }
+    },
+    {
+      "id": 19,
+      "isCrossroad": false,
+      "messageInfo": "Message de prévention sur l’importance des rapports protégés",
+      "question": null,
+      "refSuivant": 21,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 20,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Souhaites-tu aller plus loin quand même ? ",
+      "refSuivant": 1911,
+      "yesChoice": {
+        "refSuivant": 1911,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 1911,
+        "risk": null
+      }
+    },
+    {
+      "id": 1911,
+      "isCrossroad": false,
+      "messageInfo": "Message de prévention sur l’importance des rapports protégés",
+      "question": null,
+      "refSuivant": 22,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 21,
+      "isCrossroad": false,
+      "messageInfo": "Quelques jours après ta relation sexuelle avec Léa, tu te rends compte que finalement le rapport n’était pas si bien protégé que cela (le préservatif a craqué / tu n’as pas utilisé de préservatif pendant toute la durée du rapport / etc). Un risque potentiel de contraction du VIH est à prendre en compte. Suite à cela, vous décidez d’en parler tous les deux.",
+      "question": null,
+      "refSuivant": 23,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 22,
+      "isCrossroad": false,
+      "messageInfo": "Quelques jours après ta relation sexuelle avec Nicolas, tu te rends compte que finalement le rapport n’était pas si bien protégé que cela (le préservatif a craqué / tu n’as pas utilisé de préservatif pendant toute la durée du rapport / etc). Un risque potentiel de contraction du VIH est à prendre en compte. Suite à cela, vous décidez d’en parler tous les deux.",
+      "question": null,
+      "refSuivant": 23,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 23,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur ce qu’est le VIH",
+      "question": null,
+      "refSuivant": 24,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 24,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que tu t’es déjà informée sur le VIH ? ",
+      "refSuivant": null,
+      "yesChoice": {
+        "refSuivant": 64,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 27,
+        "risk": null
+      }
+    },
+    {
+      "id": 25,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que tu t’es déjà informée sur le VIH ? ",
+      "refSuivant": null,
+      "yesChoice": {
+        "refSuivant": 26,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 28,
+        "risk": null
+      }
+    },
+    {
+      "id": 64,
+      "isCrossroad": false,
+      "messageInfo": "Léa t’informe qu’elle a très peu de connaissances au sujet du VIH. Tu décides donc de répondre aux questions qu’elle te pose.",
+      "question": null,
+      "refSuivant": 29,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 26,
+      "isCrossroad": false,
+      "messageInfo": "Nicolas t’informe qu’il a très peu de connaissances au sujet du VIH. Tu décides donc de répondre aux questions qu’il te pose.",
+      "question": null,
+      "refSuivant": 31,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 27,
+      "isCrossroad": false,
+      "messageInfo": "Vous décidez d’effectuer quelques recherches ensemble. Léa te pose les questions, tu t’occupes de lui répondre grâce à tes recherches.",
+      "question": null,
+      "refSuivant": 29,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 28,
+      "isCrossroad": false,
+      "messageInfo": "Vous décidez d’effectuer quelques recherches ensemble. Nicolas  te pose les questions, tu t’occupes de lui répondre grâce à tes recherches.",
+      "question": null,
+      "refSuivant": 31,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 29,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que les préliminaires oraux (fellation,cunnilingus) représentent un risque de contracter le VIH ?",
+      "refSuivant": 30,
+      "yesChoice": {
+        "refSuivant": 30,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 30,
+        "risk": null
+      }
+    },
+    {
+      "id": 30,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les risques de contraction du VIH (préliminaires oraux).",
+      "question": null,
+      "refSuivant": 32,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 31,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que les préliminaires oraux (fellation,cunnilingus) représentent un risque de contracter le VIH ? ",
+      "refSuivant": 3011,
+      "yesChoice": {
+        "refSuivant": 3011,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 3011,
+        "risk": null
+      }
+    },
+    {
+      "id": 3011,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les risques de contraction du VIH (préliminaires oraux).",
+      "question": null,
+      "refSuivant": 34,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 32,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que la pénétration anale représente un risque de contracter le VIH ?",
+      "refSuivant": 33,
+      "yesChoice": {
+        "refSuivant": 33,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 33,
+        "risk": null
+      }
+    },
+    {
+      "id": 33,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les risques de contraction du VIH (pénétration anale).",
+      "question": null,
+      "refSuivant": 36,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 35,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que l’on peut guérir du VIH ?",
+      "refSuivant": 36,
+      "yesChoice": {
+        "refSuivant": 36,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 36,
+        "risk": null
+      }
+    },
+    {
+      "id": 36,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les solutions possibles pour traiter le VIH",
+      "question": null,
+      "refSuivant": 38,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 37,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que l’on peut guérir du VIH ?",
+      "refSuivant": 3611,
+      "yesChoice": {
+        "refSuivant": 3611,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 3611,
+        "risk": null
+      }
+    },
+    {
+      "id": 3611,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les solutions possibles pour traiter le VIH",
+      "question": null,
+      "refSuivant": 40,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 38,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Si je suis séropositive et que je tombe enceinte, est-ce que je peux transmettre le VIH à mon enfant ?",
+      "refSuivant": 39,
+      "yesChoice": {
+        "refSuivant": 39,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 39,
+        "risk": null
+      }
+    },
+    {
+      "id": 39,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur l’hérédité du VIH",
+      "question": null,
+      "refSuivant": 41,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 40,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Si je suis séropositive et que ma partenaire tombe enceinte, est-ce que je peux transmettre le VIH à mon enfant ?",
+      "refSuivant": 3911,
+      "yesChoice": {
+        "refSuivant": 3911,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 3911,
+        "risk": null
+      }
+    },
+    {
+      "id": 3911,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur l’hérédité du VIH",
+      "question": null,
+      "refSuivant": 44,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 41,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Peut-on contracter le VIH via un baiser (transmission de salive)?",
+      "refSuivant": 43,
+      "yesChoice": {
+        "refSuivant": 43,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 43,
+        "risk": null
+      }
+    },
+    {
+      "id": 43,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les transmissions via les muqueuses",
+      "question": null,
+      "refSuivant": 45,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 44,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Peut-on contracter le VIH via un baiser (transmission de salive)?",
+      "refSuivant": 4311,
+      "yesChoice": {
+        "refSuivant": 4311,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 4311,
+        "risk": null
+      }
+    },
+    {
+      "id": 4311,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les transmissions via les muqueuses",
+      "question": null,
+      "refSuivant": 47,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 45,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Peut-on contracter le VIH via les muqueuses ?",
+      "refSuivant": 46,
+      "yesChoice": {
+        "refSuivant": 46,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 46,
+        "risk": null
+      }
+    },
+    {
+      "id": 46,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les transmissions via les muqueuses",
+      "question": null,
+      "refSuivant": 48,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 47,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Peut-on contracter le VIH via les muqueuses ?",
+      "refSuivant": 4611,
+      "yesChoice": {
+        "refSuivant": 4611,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 4611,
+        "risk": null
+      }
+    },
+    {
+      "id": 4611,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les transmissions via les muqueuses",
+      "question": null,
+      "refSuivant": 51,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 48,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que le préservatif est le seul mode de contraception fiable pour éviter les risques de transmission du VIH ?",
+      "refSuivant": 49,
+      "yesChoice": {
+        "refSuivant": 49,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 49,
+        "risk": null
+      }
+    },
+    {
+      "id": 49,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les différents modes de contraception existants qui protègent contre le VIH",
+      "question": null,
+      "refSuivant": 50,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 50,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur fait qu’il s’agit du seul moyen de contraception qui protège contre les IST",
+      "question": null,
+      "refSuivant": 52,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 51,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que le préservatif est le seul mode de contraception fiable pour éviter les risques de transmission du VIH ?",
+      "refSuivant": 4911,
+      "yesChoice": {
+        "refSuivant": 4911,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 4911,
+        "risk": null
+      }
+    },
+    {
+      "id": 4911,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les différents modes de contraception existants qui protègent contre le VIH",
+      "question": null,
+      "refSuivant": 50,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 50,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur fait qu’il s’agit du seul moyen de contraception qui protège contre les IST",
+      "question": null,
+      "refSuivant": 54,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 52,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que l’on doit aller voir un infectiologue si un test de dépistage du VIH est renvoyé positif ?",
+      "refSuivant": 53,
+      "yesChoice": {
+        "refSuivant": 53,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 53,
+        "risk": null
+      }
+    },
+    {
+      "id": 53,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les différents praticiens concernés par le VIH",
+      "question": null,
+      "refSuivant": 56,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 54,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Est-ce que l’on doit aller voir un infectiologue si un test de dépistage du VIH est renvoyé positif ?",
+      "refSuivant": 53,
+      "yesChoice": {
+        "refSuivant": 53,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 53,
+        "risk": null
+      }
+    },
+    {
+      "id": 53,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les différents praticiens concernés par le VIH",
+      "question": null,
+      "refSuivant": 57,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 56,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Puis-je me faire dépister contre le VIH en pharmacie ?",
+      "refSuivant": 55,
+      "yesChoice": {
+        "refSuivant": 55,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 55,
+        "risk": null
+      }
+    },
+    {
+      "id": 55,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les différents lieux où l’on peut effectuer un dépistage",
+      "question": null,
+      "refSuivant": 59,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 57,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Puis-je me faire dépister contre le VIH en pharmacie ?",
+      "refSuivant": 55,
+      "yesChoice": {
+        "refSuivant": 55,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 55,
+        "risk": null
+      }
+    },
+    {
+      "id": 55,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur les différents lieux où l’on peut effectuer un dépistage",
+      "question": null,
+      "refSuivant": 60,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 59,
+      "isCrossroad": true,
+      "messageInfo": null,
+      "question": "Le test de dépistage du VIH peut se faire via une prise de sang ?",
+      "refSuivant": 58,
+      "yesChoice": {
+        "refSuivant": 58,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": 58,
+        "risk": null
+      }
+    },
+    {
+      "id": 58,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur le test ELISA,l’autotest VIH et TROD",
+      "question": null,
+      "refSuivant": 999,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+      "id": 60,
+      "isCrossroad": false,
+      "messageInfo": "Message d’informations sur le test ELISA,l’autotest VIH et TROD",
+      "question": null,
+      "refSuivant": 999,
+      "yesChoice": {
+        "refSuivant": null,
+        "risk": null
+      },
+      "noChoice": {
+        "refSuivant": null,
+        "risk": null
+      }
+    },
+    {
+        "id": 998,
+        "isCrossroad": false,
+        "messageInfo": "C'est parti !",
+        "question": null,
+        "refSuivant": 1,
+        "yesChoice": {
+          "refSuivant": null,
+          "risk": null
+        },
+        "noChoice": {
+          "refSuivant": null,
+          "risk": null
+        }
+      },
+      {
+        "id": 999,
+        "isCrossroad": false,
+        "messageInfo": "C'est terminé !",
+        "question": null,
+        "refSuivant": 999,
+        "yesChoice": {
+          "refSuivant": null,
+          "risk": null
+        },
+        "noChoice": {
+          "refSuivant": null,
+          "risk": null
+        }
+      }
+  ]
