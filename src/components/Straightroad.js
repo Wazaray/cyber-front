@@ -13,7 +13,7 @@ function Straightroad({ prop, setNextSlide }) {
       <div className="answer_block">
         <div className="next">
           <button value={prop.refSuivant} onClick={handleClick}>
-            NEXT !
+            {prop.btn0}
           </button>
         </div>
       </div>
